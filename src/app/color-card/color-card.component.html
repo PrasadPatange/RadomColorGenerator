@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-center">
+
+    <div id="color1" class="col-md-2 ms-5 card shadow" (click)="copyTextToClipboard(hex1)"   [ngStyle]="changeColor1">
+     
+      <p  class="text-center mt-5 mb-5 " [ngStyle]="para" >#{{hex1}}</p>
+
+    </div>
+
+    <div id="color2" class="col-md-2 ms-5 card shadow"  (click)="copyTextToClipboard(hex2)"  [ngStyle]="changeColor2">
+    
+      <p class="text-center mt-5 mb-5 " [ngStyle]="para">#{{hex2}}</p>
+      
+    </div>
+    <div id="color3" class="col-md-2 ms-5 card shadow" (click)="copyTextToClipboard(hex3)"  [ngStyle]="changeColor3">
+    
+      <p class="text-center mt-5 mb-5 " [ngStyle]="para">#{{hex3}}</p>
+      
+    </div>
+    <div id="color4" class="col-md-2 ms-5 card shadow" (click)="copyTextToClipboard(hex4)"  [ngStyle]="changeColor4">
+    
+      <p class="text-center mt-5 mb-5 " [ngStyle]="para">#{{hex4}}</p>
+    
+    </div>
+  
+
+</div>
+<br>
+<br>
+<div class="mt-5 ms-5 d-flex justify-content-center">
+
+<button (click)="randomColor()" [ngStyle]="{'color': 'navy'}" class="btn btn-lg btn-warning">Generate New Color</button>
+
+</div>
+<div class="mt-5 ms-5 d-flex justify-content-center">
+<p [ngStyle]="{'font-size': '25px'}"><b>Click on "Spacebar" to Generate New Color</b></p>
+</div>
